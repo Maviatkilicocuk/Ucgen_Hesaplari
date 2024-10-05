@@ -1,0 +1,24 @@
+package Giris;
+import java.util.Scanner;
+public class Ucgen_Hesaplari {
+    public static void main(String[] args) {
+        int a_kenari, b_kenari, c_kenari, u, cevre;
+        double ucgen_alani;
+
+            Scanner input = new Scanner(System.in);
+
+            System.out.print(" a kenarini giriniz = ");
+            a_kenari = input.nextInt();
+            System.out.print(" b kenarini giriniz = ");
+            b_kenari = input.nextInt();
+            System.out.print(" c kenarini giriniz = ");
+            c_kenari = input.nextInt();
+
+            u = (a_kenari+b_kenari+c_kenari)/2;
+            cevre = 2*u;
+            ucgen_alani = java.lang.Math.sqrt(u*(u-a_kenari)*(u-b_kenari)*(u-c_kenari));
+            System.out.println(" Çevre = " +cevre);
+            System.out.print(" Alan = " +ucgen_alani);
+
+    }
+}
